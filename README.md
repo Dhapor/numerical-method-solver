@@ -7,7 +7,7 @@ An interactive Streamlit app to solve **Ordinary Differential Equations (ODEs)**
 ## 🔗 Live App
 
 🚀 Hosted on Streamlit Cloud:  
-[https://numerical-methods.streamlit.app](https://numerical-methods.streamlit.app)  
+[https://numerical-methods.streamlit.app]([https://numerical-methods.streamlit.app](https://datapsalm-numerical-methods-solver.streamlit.app/))  
 
 
 ---
