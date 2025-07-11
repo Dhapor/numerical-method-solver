@@ -7,14 +7,14 @@ import math
 st.set_page_config(page_title="Numerical Methods Solver", layout="centered")
 
 # Sidebar navigation
-image = Image.open("ii.jpg")
+image = Image.open("IMG1.jpg")
 st.sidebar.image(image, use_container_width=True)
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Overview", "Tutorial", "Solver"])
 if page == "Overview":
-    st.image('okay-i-will-it.jpg',  width = 600)
+    st.image('IMG2.jpg',  width = 600)
     st.title("\U0001F4D8 Numerical Methods Solver")
     st.markdown("""
     #### 👋 Welcome!
