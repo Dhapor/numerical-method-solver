@@ -65,6 +65,23 @@ if page == "Overview":
     - Display intermediate and final results
     """)
 
+    st.markdown("---")
+    st.markdown("### 🙏 Credits & Acknowledgements")
+    st.markdown("""
+    This project was developed with love and collaboration by:
+
+        st.markdown("### 🙏 Credits & Acknowledgements")
+    st.markdown("""
+    This project was developed with love and collaboration by:
+
+    - **Datapsalm** — Core developer and UI designer  
+    - **[Victoria, Esther, Azeezat, Fatima]** — Method contributions, debugging, and support  
+    - **Inspiration:** This app was inspired by my tutorial instructor, **[SYSTEM ❤️]**, whose passion for teaching and dedication to our learning journey motivated me to build this platform 🎓  
+    - Special thanks to mentors, testers, and everyone who gave feedback ❤️  
+    - Built with **Streamlit**, powered by **Python**, and made for students everywhere 🌍
+    """)
+
+
 elif page == "Solver":
     st.title("\U0001F9EE Numerical Methods Solver")
 
@@ -340,14 +357,5 @@ elif page == "Tutorial":
     st.success("You're ready! Head to the **Solver** tab to try it out.")
 
     st.markdown("---")
-    st.markdown("---")
-    st.markdown("### 🙏 Credits & Acknowledgements")
-    st.markdown("""
-    This project was developed with love and collaboration by:
-
-    - **Datapsalm** — Core developer and UI designer  
-    - **[Add other names here]** — Method contributions, debugging, and support  
-    - Special thanks to mentors, testers, and everyone who gave feedback ❤️  
-    - Built with **Streamlit**, powered by **Python**, and made for students everywhere 🌍
-    """)
+    
 
