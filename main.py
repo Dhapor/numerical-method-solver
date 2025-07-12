@@ -76,9 +76,9 @@ if page == "Overview":
 
     - **Datapsalm** - Core developer and UI designer  
     - **[Victoria, Esther, Azeezat, Fatima]** - Method contributions, debugging, and support  
-    - **Inspiration:** This app was inspired by my tutorial instructor, **[SYSTEM]**, whose passion for teaching and dedication to our learning journey motivated me to build this platform 🎓  
-    - Special thanks to mentors, testers, and everyone who gave feedback ❤️  
-    - Built with **Streamlit**, powered by **Python**, and made for students everywhere 🌍
+    - **Inspiration:** This app was inspired by my tutorial instructor, **[SYSTEM]**, whose passion for teaching and dedication to our learning journey motivated me to build this platform   
+    - Special thanks to mentors, testers, and everyone who gave feedback 
+    - Built with **Streamlit**, powered by **Python**, and made for students everywhere 
     """)
 
 
