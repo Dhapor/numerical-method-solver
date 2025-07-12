@@ -75,7 +75,7 @@ if page == "Overview":
     This project was developed with love and collaboration by:
 
     - **Datapsalm** - Core developer and UI designer  
-    - **[Victoria, Esther, Azeezat, Fatima]** - Method contributions, debugging, and support  
+    - **[Victoria, Fatima, Azeezat, Esther]** - Method contributions, debugging, and support  
     - **Inspiration:** This app was inspired by my tutorial instructor, **[SYSTEM]**, whose passion for teaching and dedication to our learning journey motivated me to build this platform   
     - Special thanks to mentors, testers, and everyone who gave feedback 
     - Built with **Streamlit**, powered by **Python**, and made for students everywhere 
@@ -282,7 +282,7 @@ elif page == "Tutorial":
 
     st.markdown("### ✍️ What You Need to Enter")
     st.markdown("""
-    - **f(x, y)** — Your function to solve. Enter it using Python-style math:
+    - **f(x, y)** - Your function to solve. Enter it using Python-style math:
         - Example: `x + y`, `x * y`, `x / y`, `(x + y) ** 2`
         - Always use `**` for powers (not `^`)
         - Wrap expressions with parentheses as needed
@@ -313,10 +313,10 @@ elif page == "Tutorial":
 
     st.markdown("### 🧪 Other Inputs")
     st.markdown("""
-    - `Initial x₀` — e.g. `0`
-    - `Initial y₀` — e.g. `1`
-    - `Step size (h)` — e.g. `0.1`
-    - `Number of steps (n)` — e.g. `5`
+    - `Initial x₀` - e.g. `0`
+    - `Initial y₀` - e.g. `1`
+    - `Step size (h)` - e.g. `0.1`
+    - `Number of steps (n)` - e.g. `5`
     """)
 
     st.markdown("---")
