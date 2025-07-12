@@ -14,7 +14,7 @@ st.sidebar.image(image, use_container_width=True)
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Overview", "Tutorial", "Solver"])
 if page == "Overview":
-    st.image('IMG2.jpg',  width = 600)
+    st.image('IMG2.jpg',  width = 700)
     st.title("\U0001F4D8 Numerical Methods Solver")
     st.markdown("""
     #### 👋 Welcome!
