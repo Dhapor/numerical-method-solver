@@ -90,6 +90,7 @@ if page == "Overview":
     Your dedication to teaching did not go unnoticed — this platform stands as a reflection of that excellence. Thank you! 🙏
     """)
         
+        
 
 
 elif page == "Solver":
