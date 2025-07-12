@@ -222,8 +222,8 @@ elif page == "Solver":
         method = st.selectbox("Choose a Linear Algebra Method:", algebraic_methods)
 
         st.write("Enter your coefficient matrix A and RHS vector b (1 equation per line).")
-        A_str = st.text_area("Enter matrix A e.g :", "2 1 -1\n-3 -1 2\n-2 1 2")
-        b_str = st.text_area("Enter vector b e.g :", "8\n-11\n-3")
+        A_str = st.text_area("Enter matrix  A e.g :", "2 1 -1\n-3 -1 2\n-2 1 2")
+        b_str = st.text_area("Enter vector  b e.g :", "8\n-11\n-3")
 
         if st.button("🔍 Solve System"):
             try:
