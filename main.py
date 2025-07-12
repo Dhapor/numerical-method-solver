@@ -264,7 +264,7 @@ elif page == "Tutorial":
     These methods solve differential equations like dy/dx = f(x, y).
 
     **Required Inputs:**
-    - `f(x, y)` — The function to solve (e.g., `x + y`, `x * y`, `math.exp(x)`)
+    - `f(x, y)` — The function to solve (e.g., `x + y`, `x * y`, `math.exp(x)`, `math.sqrt(x)`)
     - `Initial x₀` — Starting x-value (e.g., 0)
     - `Initial y₀` — Starting y-value (e.g., 1)
     - `Step size (h)` — E.g., 0.1
@@ -272,7 +272,7 @@ elif page == "Tutorial":
 
     **Function Rules:**
     - You can use basic operators: `+`, `-`, `*`, `/`, `**`
-    - You can use math functions like `math.sin(x)`, `math.exp(x)` — include `math.` prefix!
+    - You can use math functions like `math.sin(x)`, `math.sqrt(x)`, `math.exp(x)` — include `math.` prefix!
     """)
 
     st.markdown("")
