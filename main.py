@@ -271,20 +271,28 @@ elif page == "Tutorial":
         - Wrap expressions with parentheses as needed
     """)
 
-    #### 💡 Common Math Operators (in Python format):
-    | Math Symbol | How to Type in Python | Example |
-    |-------------|------------------------|---------|
-    | Addition    | `+`                    | `x + y` |
-    | Subtraction | `-`                    | `x - y` |
-    | Multiplication | `*`                | `x * y` |
-    | Division    | `/`                    | `x / y` |
-    | Power       | `**`                   | `x ** 2` means x² |
-    | Square Root | `math.sqrt(x)`         | √x |
-    | Exponent    | `math.exp(x)`          | \( e^x \) |
-    | Sine        | `math.sin(x)`          | sin(x) |
-    | Cosine      | `math.cos(x)`          | cos(x) |
+        st.markdown("---")
+    st.markdown("### ✍️ Python Math Syntax Reference (for Function Input)")
 
-    st.markdown("✅ **Always prefix functions with `math.`**, like `math.sqrt(x)` or `math.exp(x)`.")
+    st.markdown("""
+    | Math Symbol        | Type This Instead       | Example                |
+    |--------------------|-------------------------|------------------------|
+    | Addition           | `+`                     | `x + y`                |
+    | Subtraction        | `-`                     | `x - y`                |
+    | Multiplication     | `*`                     | `x * y`                |
+    | Division           | `/`                     | `x / y`                |
+    | Power / Exponent   | `**`                    | `x ** 2` for x²        |
+    | Square Root        | `math.sqrt(x)`          | `math.sqrt(x + y)`     |
+    | Exponential (e^x)  | `math.exp(x)`           | `math.exp(x)`          |
+    | Natural Log (ln x) | `math.log(x)`           | `math.log(x + 1)`      |
+    | Sine               | `math.sin(x)`           | `math.sin(x)`          |
+    | Cosine             | `math.cos(x)`           | `math.cos(x)`          |
+    | Tangent            | `math.tan(x)`           | `math.tan(x)`          |
+    | Absolute Value     | `math.fabs(x)`          | `math.fabs(x - y)`     |
+
+    ✅ **Always** include `math.` before using any math function!
+    """)
+
 
     st.markdown("### 🧪 Other Inputs")
     st.markdown("""
@@ -331,5 +339,15 @@ elif page == "Tutorial":
     st.info("📏 Tip: Use clean inputs and check that dimensions match for accurate results.")
     st.success("You're ready! Head to the **Solver** tab to try it out.")
 
-st.markdown("---")
-st.markdown("<h8 style='text-align: LEFT; font-family:montserrat'>Numerical Method Solver built with ❤️ by Datapsalm</h8>", unsafe_allow_html=True)
+    st.markdown("---")
+    st.markdown("---")
+    st.markdown("### 🙏 Credits & Acknowledgements")
+    st.markdown("""
+    This project was developed with love and collaboration by:
+
+    - **Datapsalm** — Core developer and UI designer  
+    - **[Add other names here]** — Method contributions, debugging, and support  
+    - Special thanks to mentors, testers, and everyone who gave feedback ❤️  
+    - Built with **Streamlit**, powered by **Python**, and made for students everywhere 🌍
+    """)
+
