@@ -276,86 +276,76 @@ elif page == "Tutorial":
     st.markdown("---")
 
     # ODE Section
-    st.markdown("## 🔢 ODE Methods Input")
+    st.markdown("## ODE Methods Input")
     st.markdown("These methods solve ordinary differential equations like:")
     st.code("dy/dx = f(x, y)", language="python")
 
-    st.markdown("### ✍️ What You Need to Enter")
+    st.markdown("### What You Need to Enter")
     st.markdown("""
-    - **f(x, y)** - Your function to solve. Enter it using Python-style math:
-        - Example: `x + y`, `x * y`, `x / y`, `(x + y) ** 2`
-        - Always use `**` for powers (not `^`)
-        - Wrap expressions with parentheses as needed
+    - f(x, y): Your function to solve. Enter it using Python-style math:
+      - Example: x + y, x * y, x / y, (x + y) ** 2
+      - Always use ** for powers (not ^)
+      - Use parentheses to group terms
     """)
 
-    st.markdown("---")
-    st.markdown("### ✍️ Python Math Syntax Reference (for Function Input)")
+    st.markdown("### Python Math Syntax Reference (for Function Input)")
 
     st.markdown("""
-    | Math Symbol        | Type This Instead       | Example                |
-    |--------------------|-------------------------|------------------------|
-    | Addition           | `+`                     | `x + y`                |
-    | Subtraction        | `-`                     | `x - y`                |
-    | Multiplication     | `*`                     | `x * y`                |
-    | Division           | `/`                     | `x / y`                |
-    | Power / Exponent   | `**`                    | `x ** 2` for x²        |
-    | Square Root        | `math.sqrt(x)`          | `math.sqrt(x + y)`     |
-    | Exponential (e^x)  | `math.exp(x)`           | `math.exp(x)`          |
-    | Natural Log (ln x) | `math.log(x)`           | `math.log(x + 1)`      |
-    | Sine               | `math.sin(x)`           | `math.sin(x)`          |
-    | Cosine             | `math.cos(x)`           | `math.cos(x)`          |
-    | Tangent            | `math.tan(x)`           | `math.tan(x)`          |
-    | Absolute Value     | `math.fabs(x)`          | `math.fabs(x - y)`     |
-
-    ✅ **Always** include `math.` before using any math function!
+    | Math Symbol        | How to Type             | Example              |
+    |--------------------|--------------------------|----------------------|
+    | Addition           | +                        | x + y                |
+    | Subtraction        | -                        | x - y                |
+    | Multiplication     | *                        | x * y                |
+    | Division           | /                        | x / y                |
+    | Power / Exponent   | **                       | x ** 2 (means x^2)   |
+    | Square Root        | math.sqrt(x)             | math.sqrt(x + y)     |
+    | Exponential (e^x)  | math.exp(x)              | math.exp(x)          |
+    | Natural Log (ln x) | math.log(x)              | math.log(x + 1)      |
+    | Sine               | math.sin(x)              | math.sin(x)          |
+    | Cosine             | math.cos(x)              | math.cos(x)          |
+    | Tangent            | math.tan(x)              | math.tan(x)          |
+    | Absolute Value     | math.fabs(x)             | math.fabs(x - y)     |
     """)
 
-
-    st.markdown("### 🧪 Other Inputs")
+    st.markdown("### Other Inputs")
     st.markdown("""
-    - `Initial x₀` - e.g. `0`
-    - `Initial y₀` - e.g. `1`
-    - `Step size (h)` - e.g. `0.1`
-    - `Number of steps (n)` - e.g. `5`
+    - Initial x0 (e.g., 0)
+    - Initial y0 (e.g., 1)
+    - Step size h (e.g., 0.1)
+    - Number of steps n (e.g., 5)
     """)
 
     st.markdown("---")
 
     # Algebraic Section
-    st.markdown("## 🧮 Algebraic Methods Input")
-    st.markdown("These methods solve systems like this:")
+    st.markdown("## Algebraic Methods Input")
+    st.markdown("These methods solve systems like:")
     st.code("""
-    2x₁ + 1x₂ - 1x₃ = 8
-    -3x₁ - 1x₂ + 2x₃ = -11
-    -2x₁ + 1x₂ + 2x₃ = -3
+    2x1 + 1x2 - 1x3 = 8
+    -3x1 - 1x2 + 2x3 = -11
+    -2x1 + 1x2 + 2x3 = -3
     """, language="text")
 
-    st.markdown("### ✍️ What You Need to Enter")
+    st.markdown("### What You Need to Enter")
     st.markdown("""
-    - **Matrix A** (your coefficients):
-      ```
+    - Matrix A (your coefficients):
       2 1 -1
       -3 -1 2
       -2 1 2
-      ```
 
-    - **Vector b** (the right-hand side values):
-      ```
+    - Vector b (the RHS values):
       8
       -11
       -3
-      ```
 
-    ✅ Make sure:
-    - Matrix A has the same number of rows and columns (square)
-    - Vector b has the same number of rows as Matrix A
-    - No blank lines or extra spaces
+    Make sure:
+    - Matrix A is square (same number of rows and columns)
+    - Vector b has the same number of rows as A
+    - No extra spaces or blank lines
     """)
 
     st.markdown("---")
-    st.info("📏 Tip: Use clean inputs and check that dimensions match for accurate results.")
-    st.success("You're ready! Head to the **Solver** tab to try it out.")
+    st.info("Tip: Clean inputs give better results. Check matrix and vector dimensions.")
+    st.success("You're ready! Go to the Solver tab to begin.")
 
-    st.markdown("---")
-    
 
