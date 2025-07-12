@@ -71,24 +71,25 @@ if page == "Overview":
     st.markdown("### 🙏 Credits & Acknowledgements")
     st.markdown("""
     This project was developed with love and collaboration by:
-
-    - **Datapsalm** - Core developer and UI designer  
-    - **PENTAGON FAMILY (Victoria, Fatima, Azeezat, Esther)** - For their contributions, debugging, and support  
-    - **Inspiration:** This app was inspired by my tutorial instructor, **System**, whose passion for teaching and dedication to our learning journey motivated me to build this platform   
-    - Special thanks to mentors, testers, and everyone who gave feedback 
+    
+    - **Datapsalm** – Core developer and UI designer  
+    - **PENTAGON FAMILY (Victoria, Fatima, Azeezat, Esther)** – For their contributions, debugging, and support  
+    - **Inspiration:** This app was inspired by my tutorial instructor, **System**, whose passion for teaching and dedication to our learning journey sparked the idea for this platform  
+    - Special thanks to mentors, testers, and everyone who gave feedback  
     - Built with **Streamlit**, powered by **Python**, and made for students everywhere 🌍
     """)
+    
     st.markdown("---")
-    st.markdown("")
-    st.markdown("### 🎓 Honoring Our Lecturers")
+    st.markdown("### 🎓 Appreciating Our Lecturers")
     st.markdown("""
-    This section is dedicated to the amazing lecturers whose teaching made a lasting impact on my academic journey:
+    A heartfelt shout-out to the lecturers whose teaching continues to shape my journey:
     
-    - **Dr. Akinukawe** – for breaking down complex numerical concepts with such clarity  
-    - **Dr. Ehigie** – for making every class engaging and practical  
+    - **Dr. Akinukawe** – for breaking down complex numerical concepts with clarity and patience  
+    - **Dr. Ehigie** – for making every class insightful, engaging, and practical  
     
-    Your dedication to teaching did not go unnoticed — this platform stands as a reflection of that excellence. Thank you! 🙏
+    Your passion for teaching is truly inspiring, and this project is one of the ways I'm applying what I'm learning in your classes. Thank you! 🙏
     """)
+
         
         
 
