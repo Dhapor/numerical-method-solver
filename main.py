@@ -271,7 +271,7 @@ elif page == "Tutorial":
         - Wrap expressions with parentheses as needed
     """)
 
-        st.markdown("---")
+    st.markdown("---")
     st.markdown("### ✍️ Python Math Syntax Reference (for Function Input)")
 
     st.markdown("""
