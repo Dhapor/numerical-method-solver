@@ -271,11 +271,18 @@ elif page == "Tutorial":
         - Wrap expressions with parentheses as needed
     """)
 
-    st.markdown("### 💡 Common Math Operators")
-    st.table({
-        "Math Symbol": ["+", "-", "*", "/", "**", "√x", "e^x", "sin(x)", "cos(x)"],
-        "Python Input": ["x + y", "x - y", "x * y", "x / y", "x ** 2", "math.sqrt(x)", "math.exp(x)", "math.sin(x)", "math.cos(x)"]
-    })
+    #### 💡 Common Math Operators (in Python format):
+    | Math Symbol | How to Type in Python | Example |
+    |-------------|------------------------|---------|
+    | Addition    | `+`                    | `x + y` |
+    | Subtraction | `-`                    | `x - y` |
+    | Multiplication | `*`                | `x * y` |
+    | Division    | `/`                    | `x / y` |
+    | Power       | `**`                   | `x ** 2` means x² |
+    | Square Root | `math.sqrt(x)`         | √x |
+    | Exponent    | `math.exp(x)`          | \( e^x \) |
+    | Sine        | `math.sin(x)`          | sin(x) |
+    | Cosine      | `math.cos(x)`          | cos(x) |
 
     st.markdown("✅ **Always prefix functions with `math.`**, like `math.sqrt(x)` or `math.exp(x)`.")
 
