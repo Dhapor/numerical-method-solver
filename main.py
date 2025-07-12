@@ -258,78 +258,71 @@ elif page == "Tutorial":
     st.title("📘 How to Use This Solver")
     st.markdown("---")
 
-    st.markdown("### 🔢 ODE Methods Input (Solving dy/dx = f(x, y))")
+    # ODE Section
+    st.markdown("## 🔢 ODE Methods Input")
+    st.markdown("These methods solve ordinary differential equations like:")
+    st.code("dy/dx = f(x, y)", language="python")
+
+    st.markdown("### ✍️ What You Need to Enter")
     st.markdown("""
-    These methods solve **ordinary differential equations** of the form:
+    - **f(x, y)** — Your function to solve. Enter it using Python-style math:
+        - Example: `x + y`, `x * y`, `x / y`, `(x + y) ** 2`
+        - Always use `**` for powers (not `^`)
+        - Wrap expressions with parentheses as needed
+    """)
 
-    ```
-    dy/dx = f(x, y)
-    ```
+    st.markdown("### 💡 Common Math Operators")
+    st.table({
+        "Math Symbol": ["+", "-", "*", "/", "**", "√x", "e^x", "sin(x)", "cos(x)"],
+        "Python Input": ["x + y", "x - y", "x * y", "x / y", "x ** 2", "math.sqrt(x)", "math.exp(x)", "math.sin(x)", "math.cos(x)"]
+    })
 
-    #### ✍️ What You Need to Enter:
-    - **`f(x, y)`** — This is your equation. Enter it like a Python formula:
-        - Use `x + y`, `x * y`, `x / y`, etc.
-        - For exponents like \( x^2 \), use `x ** 2`
-        - Use parentheses to group terms: `x * (y + 2)`
+    st.markdown("✅ **Always prefix functions with `math.`**, like `math.sqrt(x)` or `math.exp(x)`.")
 
-    #### 💡 Common Math Operators (in Python format):
-    | Math Symbol | How to Type in Python | Example |
-    |-------------|------------------------|---------|
-    | Addition    | `+`                    | `x + y` |
-    | Subtraction | `-`                    | `x - y` |
-    | Multiplication | `*`                | `x * y` |
-    | Division    | `/`                    | `x / y` |
-    | Power       | `**`                   | `x ** 2` means x² |
-    | Square Root | `math.sqrt(x)`         | √x |
-    | Exponent    | `math.exp(x)`          | \( e^x \) |
-    | Sine        | `math.sin(x)`          | sin(x) |
-    | Cosine      | `math.cos(x)`          | cos(x) |
-
-    **Important:** Always include `math.` before using these functions.
-
-    #### 🧪 Other Inputs:
-    - **Initial x₀** — Starting value of x (e.g., `0`)
-    - **Initial y₀** — Starting value of y (e.g., `1`)
-    - **Step size (h)** — How far to move on each step (e.g., `0.1`)
-    - **Number of steps (n)** — How many times to repeat the method (e.g., `5`)
+    st.markdown("### 🧪 Other Inputs")
+    st.markdown("""
+    - `Initial x₀` — e.g. `0`
+    - `Initial y₀` — e.g. `1`
+    - `Step size (h)` — e.g. `0.1`
+    - `Number of steps (n)` — e.g. `5`
     """)
 
     st.markdown("---")
-    st.markdown("### 🧮 Algebraic Methods Input (Solving Ax = b)")
-    st.markdown("""
-    These methods solve systems of linear equations like:
 
-    ```
-    2x₁ + 1x₂ - 1x₃ = 8  
-    -3x₁ - 1x₂ + 2x₃ = -11  
+    # Algebraic Section
+    st.markdown("## 🧮 Algebraic Methods Input")
+    st.markdown("These methods solve systems like this:")
+    st.code("""
+    2x₁ + 1x₂ - 1x₃ = 8
+    -3x₁ - 1x₂ + 2x₃ = -11
     -2x₁ + 1x₂ + 2x₃ = -3
-    ```
+    """, language="text")
 
-    #### ✍️ What You Need to Enter:
-    - **Matrix A** — The numbers in front of the variables (the coefficients):
+    st.markdown("### ✍️ What You Need to Enter")
+    st.markdown("""
+    - **Matrix A** (your coefficients):
       ```
-      2 1 -1  
-      -3 -1 2  
+      2 1 -1
+      -3 -1 2
       -2 1 2
       ```
 
-    - **Vector b** — The values on the right side of the equals sign:
+    - **Vector b** (the right-hand side values):
       ```
-      8  
-      -11  
+      8
+      -11
       -3
       ```
 
     ✅ Make sure:
-    - Each row in Matrix A matches a single equation.
-    - Vector b should have the same number of rows as Matrix A.
-    - Avoid extra spaces or empty lines.
-
+    - Matrix A has the same number of rows and columns (square)
+    - Vector b has the same number of rows as Matrix A
+    - No blank lines or extra spaces
     """)
 
     st.markdown("---")
-    st.info("📏 Tip: Matrix A must be square (same number of rows and columns), and Vector b must have the same number of rows.")
-    st.success("You're ready to go! Click the **Solver** tab to try it out.")
+    st.info("📏 Tip: Use clean inputs and check that dimensions match for accurate results.")
+    st.success("You're ready! Head to the **Solver** tab to try it out.")
 
 st.markdown("---")
 st.markdown("<h8 style='text-align: LEFT; font-family:montserrat'>Numerical Method Solver built with ❤️ by Datapsalm</h8>", unsafe_allow_html=True)
