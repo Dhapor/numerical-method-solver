@@ -73,11 +73,23 @@ if page == "Overview":
     This project was developed with love and collaboration by:
 
     - **Datapsalm** - Core developer and UI designer  
-    - **Victoria, Fatima, Azeezat, Esther** - Method contributions, debugging, and support  
+    - **PENTAGON FAMILY (Victoria, Fatima, Azeezat, Esther)** - For their contributions, debugging, and support  
     - **Inspiration:** This app was inspired by my tutorial instructor, **System**, whose passion for teaching and dedication to our learning journey motivated me to build this platform   
     - Special thanks to mentors, testers, and everyone who gave feedback 
-    - Built with **Streamlit**, powered by **Python**, and made for students everywhere 
+    - Built with **Streamlit**, powered by **Python**, and made for students everywhere 🌍
     """)
+    st.markdown("---")
+    st.markdown("")
+    st.markdown("### 🎓 Honoring Our Lecturers")
+    st.markdown("""
+    This section is dedicated to the amazing lecturers whose teaching made a lasting impact on my academic journey:
+    
+    - **Dr. Akinukawe** – for breaking down complex numerical concepts with such clarity  
+    - **Dr. Ehigie** – for making every class engaging and practical  
+    
+    Your dedication to teaching did not go unnoticed — this platform stands as a reflection of that excellence. Thank you! 🙏
+    """)
+        
 
 
 elif page == "Solver":
